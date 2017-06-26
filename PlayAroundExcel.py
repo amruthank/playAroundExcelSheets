@@ -1,19 +1,19 @@
 '''
-		Command to execute the script: python PlayAroundExcel.py existing_db.xlsx latest_component_file.xlsx
-			
-		File formats before running the script:	
-			a) existing_db.xlsx : 
-				Column A: Single Company Name
-				Column B: Only Component Names
-				
-				Sheet names are saved with the company name.
-				example: Sheet1->Honeywell
-						 Sheet2->Google etc
-				
-			b)latest_component_file.xlsx:
-				Column H: Only Component Names
-				
-				1st Row should be a heading!!
+	Command to execute the script: python PlayAroundExcel.py existing_db.xlsx latest_component_file.xlsx
+
+	File formats before running the script:	
+		a) existing_db.xlsx : 
+			Column A: Single Company Name
+			Column B: Only Component Names
+
+			Sheet names are saved with the company name.
+			example: Sheet1->Honeywell
+				 Sheet2->Google etc
+
+		b)latest_component_file.xlsx:
+			Column H: Only Component Names
+
+			1st Row should be a heading!!
 '''
 
 
@@ -101,7 +101,7 @@ def main():
 			raise Exception("Error while parsing the files")
 
 		
-		if	is_present:
+		if is_present:
 			try:
 				append_db(new_con_file,old_db_con)
 			except Exception:
