@@ -1,5 +1,4 @@
 '''
-        Test!
 	Command to execute the script: python PlayAroundExcel.py existing_db.xlsx latest_component_file.xlsx
 
 	File formats before running the script:	
